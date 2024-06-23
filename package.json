@@ -1,5 +1,5 @@
 {
-  "name": "candied",
+  "name": "@lewiswon/candied",
   "version": "2.2.0",
   "description": "A general purpose CAN (Controller Area Network) toolbox with support for .dbc file parsing, CAN message decoding, and more",
   "main": "./dist/index.cjs.js",
@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bit-dream/candied.git"
+    "url": "git+https://github.com/lewiswon/candied.git"
   },
   "keywords": [
     "dbc",
