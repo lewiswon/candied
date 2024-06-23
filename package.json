@@ -26,10 +26,10 @@
     "dist-bundle/**/*",
     "dist/**/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lewiswon/candied.git"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
+  "repository": "https://github.com/lewiswon/candied.git",
   "keywords": [
     "dbc",
     "can",
