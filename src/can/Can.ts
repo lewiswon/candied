@@ -47,8 +47,8 @@ class Can extends BitUtils {
    * @param isExtended Whether or not the CAN ID is extended or standard. false by default.
    */
   createFrame(id: number, payload: number[], isExtended: boolean = false): Frame {
-    if (payload.length > 8) {
-      throw new InvalidPayloadLength(`Can not have payloads over 8 bytes: ${payload}`);
+    if (payload.length > 64) {
+      throw new InvalidPayloadLength(`Can not have payloads over 64 bytes: ${payload}`);
     } else if (payload.length === 0) {
       throw new InvalidPayloadLength(`Payload is either empty or undefined: ${payload}`);
     }
