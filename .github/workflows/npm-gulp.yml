@@ -23,6 +23,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         npm install
         npm run build
