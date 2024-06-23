@@ -27,7 +27,7 @@
     "dist/**/*"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/lewiswon"
   },
   "repository": "https://github.com/lewiswon/candied.git",
   "keywords": [
