@@ -45,7 +45,7 @@ NewSymbolValue := '\s+' symbol={'[a-zA-Z_]+_'} '$'?
 CanNode := 'BU_:\s*' raw_node_string={'[a-zA-Z0-9_\s]*'} '\s*' ';'?
     .node_names = string[] { return raw_node_string.split(' '); }
 
-CanMessage := 'BO_\s' raw_id={'[0-9]+'} '\s*' name={'[a-zA-Z0-9_]*'} ':\s*' raw_dlc={'[0-9]'} '\s*' node={'[a-zA-Z0-9_]*'}
+CanMessage := 'BO_\s' raw_id={'[0-9]+'} '\s*' name={'[a-zA-Z0-9_]*'} ':\s*' raw_dlc={'[0-9]{1,2}'} '\s*' node={'[a-zA-Z0-9_]*'}
     .id = number {return parseInt(raw_id,10);}
     .dlc = number {return parseInt(raw_dlc,10);}
 
